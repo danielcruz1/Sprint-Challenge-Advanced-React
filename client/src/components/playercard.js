@@ -24,40 +24,9 @@ class PlayerCard extends React.Component {
             });
     }
 
-    // handleChange = e => {
-    //     e.preventDefault();
-    //     this.setState({
-    //         newPlayer: e.target.value
-    //     });
-    // };
-
-    // handleNewUser = e => {
-    //     e.preventDefault();
-    //     axios
-    //     .get(`http://localhost:5000/api/${this.state.newPlayer}`)
-    //     .then(res => {
-    //         this.setState({
-    //             player: res.data,  
-    //         });
-    //         console.log(res.data);
-    //     })
-    //     .catch(err => {
-    //         console.log('NANI?!',err)
-    //     });
-    // }
-
     render() {
         return (
-            
             <div className='card-container'>
-                {/* <input
-                    className='search-bar'
-                    type="text"
-                    value={this.state.newUser}
-                    onChange={this.handleChange}
-                />
-             <button onClick={this.handleNewUser}>Find Player!</button>
-              */}
                {this.state.player.map (player => (
                     <div className='cards' key={player.id}>
                         <h1>{player.name}</h1>

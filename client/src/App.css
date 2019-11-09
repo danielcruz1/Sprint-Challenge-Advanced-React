@@ -16,7 +16,7 @@
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: #000000;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -25,7 +25,7 @@
 }
 
 .toggle {
-  background: #f68819;
+  background: red;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -41,9 +41,9 @@
 .dark-mode {
   color: #fff;
   background-color: #313843;
+}
 
-  .navbar {
-    background-color: #1F2022;
-    border: none;
-  }
+.dark-mode .navbar {
+  background-color: #1F2022;
+  border: none;
 }
